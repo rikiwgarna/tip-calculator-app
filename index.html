@@ -1,44 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style..css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Tip calculator app</title>
 
-  Bill
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <main>
+      <h1 class="headline">
+        spli <br />
+        tter
+      </h1>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+      <section class="main-section">
+        <section class="left-section">
+          <div class="form-control bill">
+            <label class="bill-label">Bill</label>
+            <input type="text" class="bill-input" placeholder="0" />
+          </div>
 
-  Number of People
+          <p class="tip-label">Select Tip %</p>
+          <div class="tips">
+            <label for="option-1" class="option-label"
+              ><input
+                type="radio"
+                name="options"
+                id="option-1"
+                value="0.05"
+              />5%</label
+            >
+            <label for="option-2" class="option-label"
+              ><input
+                type="radio"
+                name="options"
+                id="option-2"
+                value="0.1"
+              />10%</label
+            >
+            <label for="option-3" class="option-label"
+              ><input
+                type="radio"
+                name="options"
+                id="option-3"
+                value="0.15"
+              />15%</label
+            >
+            <label for="option-4" class="option-label"
+              ><input
+                type="radio"
+                name="options"
+                id="option-4"
+                value="0.25"
+              />25%</label
+            >
+            <label for="option-5" class="option-label"
+              ><input
+                type="radio"
+                name="options"
+                id="option-5"
+                value="0.5"
+              />50%</label
+            >
+            <input
+              type="text"
+              name="option-custom-input"
+              class="option-custom-input"
+              placeholder="Custom"
+            />
+          </div>
 
-  Tip Amount
-  / person
+          <div class="form-control people">
+            <label class="number-people-label"> Number of People </label>
+            <small class="error-msg">Can't be 0</small>
+            <input type="text" class="number-people-input" placeholder="0" />
+          </div>
+        </section>
+        <section class="right-section">
+          <artitcle class="tip-amount">
+            <p class="tip-amount-label">
+              Tip Amount <br />
+              <span>/ person</span>
+            </p>
+            <p class="tip-number">&dollar;0</p>
+          </artitcle>
+          <article class="total-amount">
+            <p class="total-amount-label">
+              total Amount <br />
+              <span>/ person</span>
+            </p>
+            <p class="total-number">&dollar;0</p>
+          </article>
+          <button class="reset-button">Reset</button>
+        </section>
+      </section>
+    </main>
 
-  Total
-  / person
-
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/rikiwgarna/tip-calculator-app">Riki Garna</a>.
+    </div>
+    <script src="./main.js"></script>
+  </body>
 </html>
